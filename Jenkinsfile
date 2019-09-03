@@ -7,5 +7,17 @@ pipeline {
 echo "build completed"'''
       }
     }
+    stage('test') {
+      steps {
+        sh '''date
+echo "Test complete"'''
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh '''date
+echo "Deploy complete"'''
+      }
+    }
   }
 }
